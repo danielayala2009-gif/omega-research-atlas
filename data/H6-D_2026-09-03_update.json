@@ -1,0 +1,54 @@
+{
+  "updateId": "H6-D-2026-09-03-computational",
+  "date": "2026-09-03",
+  "projectId": "p2",
+  "workId": "r10",
+  "title": "H6-D computational build and integration status",
+  "targetWindowStatus": "SEALED",
+  "targetWindowGeV": [0.756, 0.781],
+  "sidebandsGeV": {
+    "lower": [0.731, 0.756],
+    "upper": [0.781, 0.806]
+  },
+  "status": {
+    "preregistration": "PASS",
+    "runManifest": "FROZEN",
+    "phokharaBaselineBuild": "PASS",
+    "phokharaRngTest": "48/48 PASS",
+    "phokharaReferenceHistogram": "BYTE-FOR-BYTE MATCH",
+    "collier_1_2_8_build": "PASS",
+    "gvmdAncillaryCompile": "PASS",
+    "gvmdFixedPointSmokeTest": "PASS — execution test only",
+    "phokharaGvmdIntegrationLocation": "IDENTIFIED",
+    "invariantCrossingConvention": "PENDING — not guessed",
+    "publishedKloeSaBenchmark": "NOT YET RUN",
+    "h6dTargetStatistics": "NOT EVALUATED"
+  },
+  "checksums": {
+    "gvmdArchiveSha256": "5de7dd8c6896163e9d9f07594d732638781ee62b046b4e8cfede71519c07facb",
+    "phokhara10ArchiveSha256": "6933a1abb60430fc776be6071b8f3fff92ca5a488cc969820f5d44b3bdb165b0",
+    "mesmerArchiveSha256": "bf20f8f530abb79087d3be70b58bc209706314fe85c27d8f55d400f8475172a0",
+    "phokharaReferenceHistogramSha256": "b3f1358c1cb1682784bd8574126ba0d5184d6c2b9e982798891b1729f7e737a1"
+  },
+  "publishedBenchmarkTargets": {
+    "tableI": {
+      "baseline": "16.3046(9)",
+      "gvmdISR": "16.3050(9)",
+      "fullGVMD": "16.3050(9)"
+    },
+    "rhoRegion": {
+      "baseline": "8.8450(8)",
+      "gvmdISR": "8.8453(8)",
+      "fullGVMD": "8.8452(8)"
+    }
+  },
+  "artifacts": [
+    "H6-D_RUN_MANIFEST_v1.0_FROZEN_2026-09-03.json",
+    "H6-D_BENCHMARK_TARGETS_v1.0_2026-09-03.csv",
+    "H6-D_BASELINE_BUILD_AUDIT_2026-09-03.json",
+    "H6-D_COLLIER_GVMD_BUILD_AUDIT_2026-09-03.json",
+    "H6-D_PHOKHARA_GVMD_INTERFACE_AUDIT_2026-09-03.json"
+  ],
+  "nextGate": "Obtain or independently establish the authors' exact invariant/crossing map, integrate GVMD convention-safely, then reproduce the published KLOE small-angle benchmark before opening the frozen H6-D target window.",
+  "claimBoundary": "This record documents computational infrastructure progress only. It is not a positive H6-D result and does not claim a new-physics effect or resolution of the muon g-2 discrepancy."
+}
